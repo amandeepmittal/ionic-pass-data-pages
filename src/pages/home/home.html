@@ -7,8 +7,11 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <ion-item>
+      <ion-label>Enter</ion-label>
+      <ion-input placeholder='Your fav color...' #color></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button color="secondary" (click)="goTo(color.value)">About Page</button>
 </ion-content>
